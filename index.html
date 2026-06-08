@@ -1,161 +1,300 @@
 <!doctype html>
 <html lang="es">
- <head>
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VitalSystem.cg - Software Personalizado, Páginas Web y Soluciones Digitales</title>
-  <meta name="description" content="VitalSystem.cg crea software personalizado, páginas web profesionales y aplicaciones digitales para potenciar tu negocio. Soluciones en control de plagas hospitalario y sistemas de guardería.">
-  <meta name="keywords" content="software personalizado, desarrollo web, aplicaciones, control plagas hospital, sistema guardería, soluciones digitales, páginas web profesionales">
-  <meta name="author" content="VitalSystem.cg">
-  <meta name="robots" content="index, follow">
-  <meta property="og:title" content="VitalSystem.cg - Soluciones Digitales Inteligentes">
-  <meta property="og:description" content="Software, páginas web y aplicaciones diseñadas para transformar y potenciar tu negocio. Tecnología innovadora a tu medida.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://tudominio.com/og-image.jpg">
-  <link rel="canonical" href="https://tudominio.com/">
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
-  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <title>Fabricio Calfual · Dev</title>
+  <meta name="description" content="Portfolio de Fabricio Calfual — Desarrollador Full Stack. Software personalizado, páginas web y soluciones digitales.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
   <script src="/_sdk/element_sdk.js"></script>
-  
-  
   <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
- <script src="/_sdk/telemetry_sdk.js"></script>
-<link rel="stylesheet" href="styles.css">
+  <script src="/_sdk/telemetry_sdk.js"></script>
 </head>
- <body>
-  <div class="app-wrapper">
-   <!-- Header Hero -->
-   <header class="header">
-    <div class="header-content fade-in">
-     <h1 id="main-title">Soluciones Digitales Inteligentes</h1>
-     <p id="main-subtitle">Software, Páginas Web y Aplicaciones Personalizadas</p>
-     <p id="tagline-text" style="font-size: 1.5rem; margin-top: 20px; font-weight: 600; color: #ffd700; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);">💡 Tecnología que transforma negocios</p>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+  <div class="scroll-bar" id="scroll-bar"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a class="nav-logo" href="#home">
+      <span class="bracket">&lt;</span>dev.pinkman<span class="bracket">/&gt;</span>
+    </a>
+    <div class="nav-links" id="nav-links">
+      <a href="#about"    class="nav-link">About</a>
+      <a href="#skills"   class="nav-link">Skills</a>
+      <a href="#projects" class="nav-link">Proyectos</a>
+      <a href="#services" class="nav-link">Servicios</a>
+      <a href="#contact"  class="nav-link nav-cta">Contacto</a>
     </div>
-   </header><!-- Solutions Section -->
-   <section class="features-section">
-    <div class="features-container">
-     <h2 class="section-title">Nuestras Soluciones</h2>
-     <div class="solutions-grid" style="padding: 0 20px;">
-      <!-- Pest Control Solution -->
-      <div class="solution-card fade-in" style="animation-delay: 0.1s">
-       <div class="solution-header">
-        <i data-lucide="shield-alert" style="width: 40px; height: 40px; margin-bottom: 10px;"></i>
-        <h3>Control de Plagas Hospitalario</h3>
-        <p>Seguridad Sanitaria Garantizada</p>
-       </div>
-       <div class="solution-body">
-        <ul class="solution-features">
-         <li>Monitoreo 24/7 en tiempo real</li>
-         <li>Reportes automáticos normalizados</li>
-         <li>Control integrado de inspecciones</li>
-         <li>Cumplimiento ISO y regulaciones</li>
-         <li>Gestión de equipos de trabajo</li>
-         <li>Análisis de tendencias avanzado</li>
-        </ul>
-        <p style="color: #5a6b7a; font-size: 0.9rem; margin-top: 15px;">Protege tu hospital con tecnología avanzada de control de plagas. Asegura el cumplimiento normativo sanitario.</p>
-       </div>
-      </div><!-- Daycare Solution -->
-      <div class="solution-card fade-in" style="animation-delay: 0.2s">
-       <div class="solution-header">
-        <i data-lucide="heart" style="width: 40px; height: 40px; margin-bottom: 10px;"></i>
-        <h3>Sistema de Sala Cuna</h3>
-        <p>Conexión Padres-Educadores</p>
-       </div>
-       <div class="solution-body">
-        <ul class="solution-features">
-         <li>Monitoreo en tiempo real de niños</li>
-         <li>Galería de fotos y videos actualizados</li>
-         <li>Notificaciones de actividades</li>
-         <li>Registro de hitos y desarrollo</li>
-         <li>Comunicación directa con parvularias</li>
-         <li>Reportes diarios automáticos</li>
-        </ul>
-        <p style="color: #5a6b7a; font-size: 0.9rem; margin-top: 15px;">Mantén a los padres conectados con sus hijos. Visualiza el cuidado profesional en tiempo real.</p>
-       </div>
-      </div><!-- Web Development Solution -->
-      <div class="solution-card fade-in" style="animation-delay: 0.3s">
-       <div class="solution-header">
-        <i data-lucide="globe" style="width: 40px; height: 40px; margin-bottom: 10px;"></i>
-        <h3>Páginas Web Personalizadas</h3>
-        <p>Presencia Digital Profesional</p>
-       </div>
-       <div class="solution-body">
-        <ul class="solution-features">
-         <li>Diseño responsive y moderno</li>
-         <li>Optimización SEO completa</li>
-         <li>Integración de tiendas online</li>
-         <li>Formularios y chatbots</li>
-         <li>Analytics y reportes</li>
-         <li>Soporte técnico continuo</li>
-        </ul>
-        <p style="color: #5a6b7a; font-size: 0.9rem; margin-top: 15px;">Páginas web que convierten visitantes en clientes. Diseño moderno y funcionalidad garantizada.</p>
-       </div>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <canvas id="canvas"></canvas>
+    <div class="hero-inner">
+      <div class="hero-tag">// Disponible para proyectos ✦</div>
+      <h1 class="hero-name">
+        Fabricio<br>
+        <span class="name-outline">Calfual</span>
+      </h1>
+      <div class="hero-typed">
+        <span class="typed-prefix">&gt;&nbsp;</span>
+        <span id="typed"></span><span class="typed-cursor">|</span>
       </div>
-     </div>
+      <p class="hero-bio">
+        Desarrollo software que importa. Desde sistemas empresariales<br class="br-desktop">
+        hasta experiencias web que la gente realmente disfruta.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-main">Ver proyectos</a>
+        <a href="#contact"  class="btn-ghost">Hablemos →</a>
+      </div>
+      <div class="hero-contacts">
+        <a href="https://www.instagram.com/dev.pinkman/" target="_blank" rel="noopener" class="hclink">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          @dev.pinkman
+        </a>
+        <a href="mailto:Fabriciocg.dev@gmail.com" class="hclink">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Fabriciocg.dev@gmail.com
+        </a>
+      </div>
     </div>
-   </section><!-- Why Choose Us Section -->
-   <section style="background: linear-gradient(135deg, #f0f4f8 0%, #e8f1f7 100%); padding: 80px 20px;">
-    <div style="max-width: 1000px; margin: 0 auto;">
-     <h2 class="section-title">¿Por Qué Elegirnos?</h2>
-     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 50px;">
-      <div style="text-align: center;">
-       <div style="background: linear-gradient(135deg, #1a5f7a, #2a8fa3); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white;"><i data-lucide="zap" style="width: 40px; height: 40px;"></i>
-       </div>
-       <h3 style="color: #1a5f7a; margin-bottom: 10px; font-weight: 700;">Innovación</h3>
-       <p style="color: #5a6b7a; font-size: 0.95rem;">Tecnología de punta y soluciones modernas adaptadas a tu negocio</p>
-      </div>
-      <div style="text-align: center;">
-       <div style="background: linear-gradient(135deg, #1a5f7a, #2a8fa3); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white;"><i data-lucide="users" style="width: 40px; height: 40px;"></i>
-       </div>
-       <h3 style="color: #1a5f7a; margin-bottom: 10px; font-weight: 700;">Equipo Experto</h3>
-       <p style="color: #5a6b7a; font-size: 0.95rem;">Profesionales con años de experiencia en desarrollo y tecnología</p>
-      </div>
-      <div style="text-align: center;">
-       <div style="background: linear-gradient(135deg, #1a5f7a, #2a8fa3); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white;"><i data-lucide="target" style="width: 40px; height: 40px;"></i>
-       </div>
-       <h3 style="color: #1a5f7a; margin-bottom: 10px; font-weight: 700;">Resultados</h3>
-       <p style="color: #5a6b7a; font-size: 0.95rem;">Soluciones que se enfocan en tu éxito y ROI medible</p>
-      </div>
-      <div style="text-align: center;">
-       <div style="background: linear-gradient(135deg, #1a5f7a, #2a8fa3); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white;"><i data-lucide="headphones" style="width: 40px; height: 40px;"></i>
-       </div>
-       <h3 style="color: #1a5f7a; margin-bottom: 10px; font-weight: 700;">Soporte 24/7</h3>
-       <p style="color: #5a6b7a; font-size: 0.95rem;">Atención continua para resolver cualquier inconveniente rápidamente</p>
-      </div>
-      <div style="text-align: center;">
-       <div style="background: linear-gradient(135deg, #1a5f7a, #2a8fa3); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white;"><i data-lucide="shield" style="width: 40px; height: 40px;"></i>
-       </div>
-       <h3 style="color: #1a5f7a; margin-bottom: 10px; font-weight: 700;">Seguridad</h3>
-       <p style="color: #5a6b7a; font-size: 0.95rem;">Sistemas protegidos con encriptación y cumplimiento normativo</p>
-      </div>
-      <div style="text-align: center;">
-       <div style="background: linear-gradient(135deg, #1a5f7a, #2a8fa3); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: white;"><i data-lucide="trending-up" style="width: 40px; height: 40px;"></i>
-       </div>
-       <h3 style="color: #1a5f7a; margin-bottom: 10px; font-weight: 700;">Escalabilidad</h3>
-       <p style="color: #5a6b7a; font-size: 0.95rem;">Sistemas que crecen con tu empresa sin complicaciones</p>
-      </div>
-     </div>
+    <div class="hero-scroll">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll</span>
     </div>
-   </section>
-   <section class="whatsapp-section fade-in">
-    <h2>¿Interesado en Nuestras Soluciones?</h2>
-    <p>Contáctanos por WhatsApp para una demostración personalizada y conoce cómo podemos mejorar tu institución.</p><a href="https://wa.me/56976827112?text=Hola%2C%20me%20gustaría%20conocer%20más%20sobre%20las%20soluciones%20de%20TechSalud%20Solutions" target="_blank" rel="noopener noreferrer" class="whatsapp-btn"> <i data-lucide="message-circle"></i> <span>Contactar por WhatsApp</span> </a>
-   </section><!-- CTA Section -->
-   <section class="cta-section fade-in">
-    <div class="cta-content">
-     <h2>Transformá tu Institución con Tecnología</h2>
-     <p>Cientos de hospitales y guarderías confían en nuestras soluciones para mejorar la calidad y seguridad.</p>
-     <div class="cta-buttons">
-      <a href="https://wa.me/56976827112?text=Quiero%20solicitar%20una%20demo%20de%20VitalSystem.cg" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Solicitar Demo Gratis</a> <button class="btn btn-secondary" onclick="document.querySelector('.whatsapp-section').scrollIntoView({behavior: 'smooth'})">Más Información</button>
-     </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="sec-label">01 — About me</div>
+      <h2 class="sec-title">¿Quién <span class="hl">soy</span>?</h2>
+      <div class="about-grid">
+        <div class="code-window reveal">
+          <div class="code-bar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="code-fname">developer.js</span>
+          </div>
+          <pre class="code-body"><span class="ck">const</span> <span class="cn">fabricio</span> = {
+  <span class="cp">nombre</span>:     <span class="cs">"Fabricio Calfual"</span>,
+  <span class="cp">rol</span>:        <span class="cs">"Full Stack Developer"</span>,
+  <span class="cp">ubicacion</span>: <span class="cs">"Chile 🇨🇱"</span>,
+  <span class="cp">stack</span>: [
+    <span class="cs">"React"</span>, <span class="cs">"Node.js"</span>,
+    <span class="cs">"TypeScript"</span>, <span class="cs">"MySQL"</span>
+  ],
+  <span class="cp">disponible</span>: <span class="cb">true</span> <span class="cc">// hire me!</span>
+};</pre>
+        </div>
+        <div class="about-text reveal">
+          <p>Hola, soy <strong>Fabricio</strong>. Desarrollador full stack apasionado por crear soluciones digitales que resuelven problemas reales.</p>
+          <p>Llevo proyectos desde cero hasta producción: análisis, diseño, desarrollo y deploy. Trabajo con empresas y emprendedores para construir software que funcione de verdad.</p>
+          <p>Cuando no estoy codificando, estoy pensando en cómo mejorar lo que ya hice.</p>
+          <div class="stats-row">
+            <div class="stat"><span class="sn" data-n="4">0</span><span class="sp">+</span><span class="sl">Proyectos</span></div>
+            <div class="stat"><span class="sn" data-n="2">0</span><span class="sp">+</span><span class="sl">Años exp.</span></div>
+            <div class="stat"><span class="sn" data-n="4">0</span><span class="sp">+</span><span class="sl">Clientes</span></div>
+          </div>
+        </div>
+      </div>
     </div>
-   </section><!-- Footer -->
-   <footer class="footer">
-    <p>© 2024 VitalSystem.cg. Soluciones Digitales Inteligentes.</p>
-    <p>Innovación | Calidad | Seguridad | <strong id="footer-whatsapp">+56976827112</strong></p>
-   </footer>
-  </div>
-  
-<script src="script.js"></script>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="sec-label">02 — Skills</div>
+      <h2 class="sec-title">Tecnologías que <span class="hl">uso</span></h2>
+      <div class="skills-wrap">
+        <div class="skill-cols">
+          <div class="skill-col reveal">
+            <div class="scol-label">Frontend</div>
+            <div class="slist">
+              <div class="si"><div class="sm"><span>HTML / CSS</span><span class="spct">92%</span></div><div class="sbar"><div class="sfill" data-w="92"></div></div></div>
+              <div class="si"><div class="sm"><span>JavaScript</span><span class="spct">85%</span></div><div class="sbar"><div class="sfill" data-w="85"></div></div></div>
+              <div class="si"><div class="sm"><span>React / Next.js</span><span class="spct">78%</span></div><div class="sbar"><div class="sfill" data-w="78"></div></div></div>
+              <div class="si"><div class="sm"><span>TypeScript</span><span class="spct">72%</span></div><div class="sbar"><div class="sfill" data-w="72"></div></div></div>
+            </div>
+          </div>
+          <div class="skill-col reveal">
+            <div class="scol-label">Backend &amp; DB</div>
+            <div class="slist">
+              <div class="si"><div class="sm"><span>Node.js</span><span class="spct">80%</span></div><div class="sbar"><div class="sfill" data-w="80"></div></div></div>
+              <div class="si"><div class="sm"><span>PHP</span><span class="spct">75%</span></div><div class="sbar"><div class="sfill" data-w="75"></div></div></div>
+              <div class="si"><div class="sm"><span>SQL / MySQL</span><span class="spct">82%</span></div><div class="sbar"><div class="sfill" data-w="82"></div></div></div>
+              <div class="si"><div class="sm"><span>MongoDB</span><span class="spct">68%</span></div><div class="sbar"><div class="sfill" data-w="68"></div></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="tech-cloud reveal">
+          <div class="tc-label">También trabajo con</div>
+          <div class="tc-tags">
+            <span class="tag">Git</span><span class="tag tl">Tailwind CSS</span><span class="tag">Linux</span>
+            <span class="tag tl">REST APIs</span><span class="tag">Docker</span><span class="tag">Firebase</span>
+            <span class="tag tl">React Native</span><span class="tag">Figma</span><span class="tag">AWS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="sec-label">03 — Proyectos</div>
+      <h2 class="sec-title">Lo que he <span class="hl">construido</span></h2>
+      <div class="proj-list">
+
+        <article class="proj reveal">
+          <div class="proj-glow" style="--c:#8b5cf6"></div>
+          <div class="proj-num">01</div>
+          <div class="proj-body">
+            <div class="proj-top">
+              <h3>Sistema de Control de Plagas</h3>
+              <a href="#contact" class="proj-arr" title="Consultar">→</a>
+            </div>
+            <p>Sistema integral de control de plagas para Establecimientos. Monitoreo en tiempo real, reportes automáticos y cumplimiento ISO en una sola plataforma.</p>
+            <div class="proj-tech"><span>React</span><span>Node.js</span><span>MySQL</span><span>REST API</span></div>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <div class="proj-glow" style="--c:#06b6d4"></div>
+          <div class="proj-num">02</div>
+          <div class="proj-body">
+            <div class="proj-top">
+              <h3>Plataforma de Salas Cuna/Establecimientos educativos</h3>
+              <a href="#contact" class="proj-arr" title="Consultar">→</a>
+            </div>
+            <p>Plataforma digital para salas cuna que conecta padres y educadores en tiempo real. Galería multimedia, notificaciones push y seguimiento del desarrollo infantil.</p>
+            <div class="proj-tech"><span>React Native</span><span>Supabase</span><span>Node.js</span><span>Push Notif.</span></div>
+          </div>
+        </article>
+
+        <article class="proj reveal">
+          <div class="proj-glow" style="--c:#10b981"></div>
+          <div class="proj-num">03</div>
+          <div class="proj-body">
+            <div class="proj-top">
+              <h3>Páginas Web eccomerce</h3>
+              <a href="#contact" class="proj-arr" title="Consultar">→</a>
+            </div>
+            <p>Plataforma de soluciones digitales para empresas. Sistemas de gestión, landing pages y automatización de procesos para negocios de todos los tamaños.</p>
+            <div class="proj-tech"><span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span><span>Tailwind</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="sec-label">04 — Servicios</div>
+      <h2 class="sec-title">¿En qué te puedo <span class="hl">ayudar</span>?</h2>
+      <div class="srv-grid">
+
+        <div class="srv reveal">
+          <div class="srv-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><circle cx="6.5" cy="6" r="1" fill="currentColor" stroke="none"/><circle cx="9.5" cy="6" r="1" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Desarrollo Web</h3>
+          <p>Páginas web y plataformas completas. Diseño moderno, rápido, responsive y optimizado para SEO.</p>
+          <div class="srv-tags"><span>React</span><span>Next.js</span><span>Tailwind</span></div>
+        </div>
+
+        <div class="srv srv-feat reveal">
+          <div class="srv-badge">★ Destacado</div>
+          <div class="srv-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Software a Medida</h3>
+          <p>Sistemas empresariales personalizados. Automatización de procesos, integraciones y soluciones escalables.</p>
+          <div class="srv-tags"><span>Node.js</span><span>MySQL</span><span>API REST</span></div>
+        </div>
+
+        <div class="srv reveal">
+          <div class="srv-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-linecap="round" stroke-width="3"/></svg>
+          </div>
+          <h3>Apps Móviles</h3>
+          <p>Aplicaciones cross-platform para iOS y Android con experiencia nativa y alto rendimiento.</p>
+          <div class="srv-tags"><span>React Native</span><span>Firebase</span></div>
+        </div>
+
+        <div class="srv reveal">
+          <div class="srv-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3>Consultoría Tech</h3>
+          <p>Asesoría técnica para arquitectura, elección de stack, code review y mejora de procesos.</p>
+          <div class="srv-tags"><span>Arquitectura</span><span>Code review</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="sec-label">05 — Contacto</div>
+      <h2 class="sec-title contact-title">¿Empezamos algo<br><span class="hl">juntos</span>?</h2>
+      <p class="contact-sub">Tienes un proyecto en mente? Escribeme. Respondo rápido 🚀</p>
+      <div class="cc-list">
+
+        <a href="https://wa.me/56976827112?text=Hola%20Fabricio%2C%20vi%20tu%20portfolio%20y%20quiero%20contactarte" target="_blank" rel="noopener noreferrer" class="cc cc-wa reveal">
+          <div class="cc-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          </div>
+          <div class="cc-info"><strong>WhatsApp</strong><span>+56 9 7682 7112</span></div>
+          <span class="cc-arr">→</span>
+        </a>
+
+        <a href="https://www.instagram.com/dev.pinkman/" target="_blank" rel="noopener noreferrer" class="cc cc-ig reveal">
+          <div class="cc-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <div class="cc-info"><strong>Instagram</strong><span>@dev.pinkman</span></div>
+          <span class="cc-arr">→</span>
+        </a>
+
+        <a href="mailto:Fabriciocg.dev@gmail.com" class="cc cc-mail reveal">
+          <div class="cc-ico">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="cc-info"><strong>Email</strong><span>Fabriciocg.dev@gmail.com</span></div>
+          <span class="cc-arr">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><span class="bracket">&lt;</span>dev.pinkman<span class="bracket">/&gt;</span></div>
+      <p>© 2024 Fabricio Calfual · Hecho con código y café ☕</p>
+      <div class="footer-links">
+        <a href="https://www.instagram.com/dev.pinkman/" target="_blank">Instagram</a>
+        <a href="mailto:Fabriciocg.dev@gmail.com">Email</a>
+        <a href="https://wa.me/56976827112" target="_blank">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
